@@ -84,6 +84,7 @@ a:hover {
     height: 13vh;
     background-color: black;
     overflow: hidden;
+
     /* Prevent waves from overflowing */
 }
 
@@ -133,8 +134,10 @@ a:hover {
 
 @media (max-width: 768px) {
     .waves {
-        height: 40px;
-        /* min-height: 40px; */
+        /* height: 40px;
+        min-height: 40px; */
+        position: fixed;
+        bottom: 0;
     }
 
 

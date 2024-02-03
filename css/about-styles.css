@@ -1,5 +1,6 @@
 /* Common styles for all screen sizes */
-html, body {
+html,
+body {
   background-color: black;
   margin: 0;
   color: #800080;
@@ -35,7 +36,7 @@ div {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 115px;
+  margin-top: 20px;
 }
 
 p {
@@ -58,29 +59,58 @@ p::selection {
 /* Small screens (mobile) */
 @media (max-width: 768px) {
   .waves {
-      height: 40px;
-      min-height: 40px;
+    height: 40px;
+    min-height: 40px;
   }
 
   h1 {
-      font-size: 2.5em;
-      width: 250px;
+    font-size: 2.5em;
+    width: 250px;
   }
 
   video {
-      height: auto;
+    height: auto;
   }
 
   div {
-      margin-top: 60px;
+    margin-top: 60px;
   }
 
   p {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 
   a {
-      font-size: 2.5em;
-      width: 250px;
+    font-size: 2.5em;
+    width: 250px;
   }
+  iframe {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  table {
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+  }
+}
+
+body {
+  margin: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  direction: rtl;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  /* background-color: #800080;
+  color: black; */
+  font-weight: 800;
 }
